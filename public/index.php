@@ -1,8 +1,11 @@
 <?php
 
 //import de de l'autoload
-include 'vendor/autoload.php';
-include 'env.php';
+include '../vendor/autoload.php';
+
+//Charger les variables d'environnement
+$dotenv = Dotenv\Dotenv::createImmutable("../");
+$dotenv->load();
 
 //récupération de l'url
 $url = parse_url($_SERVER["REQUEST_URI"]);

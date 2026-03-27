@@ -22,14 +22,12 @@ cd evaluation_php_poo
 composer install
 ```
 
-### 4 Créer un fichier env.php avec les informations de la BDD
-```php
-<?php
-
-const DB_USERNAME = ""; //Login de la BDD
-const DB_PASSWORD = ""; //Password de la BDD
-const DB_SERVER = "localhost"; //Hote de la BDD
-const DB_NAME = "games"; //Nom de la BDD
+### 4 Créer un fichier .env avec les informations de la BDD
+```env
+DATABASE_USERNAME=root
+DATABASE_PASSWORD=
+DATABASE_NAME=todolist
+DATABASE_HOST=localhost:3306
 ```
 
 ### 5 démarrer le serveur PHP

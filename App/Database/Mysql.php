@@ -1,19 +1,16 @@
-<?php 
+<?php
 
 namespace App\Database;
 
 class Mysql
 {
-
-    /**
-     * Méthode pour se connecter à la BDD Mysql
-     * @return \PDO connexion à la BDD Mysql
-     */
-    public function connectBDD(): \PDO {
-
-        return new \PDO('mysql:host=' . DB_SERVER . ';dbname=' . DB_NAME .'',
-            DB_USERNAME,
-            DB_PASSWORD, 
+    public static function connectBdd(): \PDO
+    {
+        //Création d'un objet PDO
+        return new \PDO(
+            'mysql:host=' . $_ENV["DATABASE_HOST"] . ';dbname=' . $_ENV["DATABASE_NAME"] . '',
+            $_ENV["DATABASE_USERNAME"],
+            $_ENV["DATABASE_PASSWORD"],
             [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]
         );
     }

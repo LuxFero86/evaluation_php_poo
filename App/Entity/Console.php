@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model;
+namespace App\Entity;
 
-class Game
+class Console
 {
     //Attributs
 

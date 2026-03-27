@@ -5,8 +5,8 @@ namespace App\Controller;
 use App\Controller\AbstractController;
 use App\Repository\ConsoleRepository;
 use App\Repository\GameRepository;
-use App\Model\Console;
-use App\Model\Game;
+use App\Entity\Console;
+use App\Entity\Game;
 use App\Utils\Tools;
 
 

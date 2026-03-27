@@ -3,7 +3,7 @@
 namespace App\Repository;
 
 use App\Database\Mysql;
-use App\Model\Console;
+use App\Entity\Console;
 
 class ConsoleRepository
 {

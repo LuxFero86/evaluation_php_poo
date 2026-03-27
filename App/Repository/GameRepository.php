@@ -3,8 +3,8 @@
 namespace App\Repository;
 
 use App\Database\Mysql;
-use App\Model\Console;
-use App\Model\Game;
+use App\Entity\Console;
+use App\Entity\Game;
 
 class GameRepository
 {
